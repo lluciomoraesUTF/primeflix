@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 100vh;
+    background-color: #083844;
+    padding-top: 10vh; 
+  }
+  
+  
+  .card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 420px; 
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .loginButton, 
+  .registerButton {
+    background-color: #D32F2F; /* 🔴 Vermelho igual aos outros botões */
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  .loginButton:hover, 
+  .registerButton:hover {
+    background-color: #B71C1C; 
+  }
+  
+  .error {
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  

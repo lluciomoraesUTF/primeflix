@@ -1,0 +1,86 @@
+.container {
+    text-align: center;
+    color: #083844;
+    background-color: #083844; 
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.movieList {
+    max-width: 800px;
+    margin: 14px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 16px;
+    justify-content: center;
+}
+
+.movieList article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movieList strong {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #083844;
+}
+
+.movieList img {
+    width: 100%;
+    max-width: 200px; 
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movieList a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #8B0000;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.movieList strong {
+    min-height: 48px; 
+    max-height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #083844;
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+}
+
+.movieList a:hover {
+    background-color: #a30d0d;
+}

@@ -1,0 +1,116 @@
+.myMovies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    background-color: #083844; /* Fundo verde similar ao login */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.myMovies h1 {
+    margin-bottom: 20px;
+    color: white; /* Texto em branco para contraste */
+    text-align: center;
+}
+
+.myMovies ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 900px;
+    justify-content: center;
+    padding: 0;
+}
+
+.myMovies ul li {
+    list-style: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.myMovies ul li span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #083844;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.myMovies ul li img {
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.myMovies div {
+    display: flex;
+    gap: 10px;
+}
+
+.myMovies div a, 
+.myMovies div button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #8B0000; /* Cor dos botões */
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.myMovies div a:hover,
+.myMovies div button:hover {
+    background-color: #a30d0d; /* Cor do botão ao passar o mouse */
+}
+
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.loginButton {
+    background-color: #8B0000;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background-color: #a30d0d;
+}
