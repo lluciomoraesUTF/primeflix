@@ -12,7 +12,7 @@ model User {
   name     String
   email    String @unique
   password String
-  movies   Movie[] // Adicione esta linha para definir a relação inversa
+  movies   Movie[] 
 }
 
 

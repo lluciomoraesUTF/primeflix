@@ -18,7 +18,9 @@ const handleStorageChange = () => {
 
 setIsLoggedIn(!!localStorage.getItem("token"));
 
+
 };
+
 
 
 window.addEventListener("storage", handleStorageChange);
